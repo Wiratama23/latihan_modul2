@@ -1,20 +1,12 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Latihan {
     public static void main(String[] args) {
-        ArrayList<String> hewan = new ArrayList<>();
-        hewan.add("Sapi");
-        hewan.add("Kelinci");
-        hewan.add("Kambing");
-        hewan.add("Unta");
-        hewan.add("Domba");
+        ArrayList<String> hewan = new ArrayList<>(Arrays.asList("Sapi","Kelinci","Kambing","Unta","Domba"));
         System.out.println("Hewan\t\t\t: " + hewan);
 
-        ArrayList<String> deleteHewan = new ArrayList<>();
-        deleteHewan.add("Kelinci");
-        deleteHewan.add("Kambing");
-        deleteHewan.add("Unta");
-
+        ArrayList<String> deleteHewan = new ArrayList<>(Arrays.asList("Kelinci","Kambing","Unta"));
         hewan.removeAll(deleteHewan);
 
         System.out.println("Hewan yang dihapus\t: " + deleteHewan);
